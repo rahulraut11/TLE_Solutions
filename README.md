@@ -45,5 +45,5 @@ You can:
 To clone this repo:
 
 ```bash
-git clone https://github.com/<your-username>/cp-31-sheet-solutions.git
+git clone https://github.com/rahulraut11/TLE_Solutions
 
