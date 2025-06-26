@@ -1,3 +1,15 @@
+/* We want to make all elements to be 0 
+
+It is not necessary to give minimum no of operations. 
+
+So for even length array , take XOR from 1 to n : this will make all values from 1 to n to be some number lets say x. 
+
+Take XOR again , and we know even times XOR of same number is 0 , hence answer is 2
+
+For odd length array , same concept but take XOR from 1 to n-1 (to get no of elements selected be even) take XOR 2 times so that we make all elements from 1 to n-1 be 0 
+
+After that take XOR 2 times from n-1 to n to make the last element we left to make it ZERO */
+
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
