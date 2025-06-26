@@ -1,3 +1,7 @@
+/* We will only use tools when we only have 1 second left since want to fully utilize all the tools given.
+
+So first wait till clock reaches 1 from b , then start using tools. */
+
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
