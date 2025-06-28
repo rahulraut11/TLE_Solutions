@@ -1,3 +1,9 @@
+/* We want to find min no of operations to make the array strictly increasing 
+
+We run a reverse loop to make the previous element less than current using a while loop, it stops when either condition is satisfied or previous becomes 0.
+
+For the arrays where its not possible to make it strictly increasing , both prev and curr becomes 0, in that case we return -1 */
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -9,12 +15,10 @@ int main()
         int n;
         cin >> n;
         vector<long long> a(n);
-        bool x = false;
         for (int i = 0; i < n; i++)
         {
             cin >> a[i];
         }
-
         int cnt = 0;
         for (int i = n - 1; i > 0; i--)
         {
