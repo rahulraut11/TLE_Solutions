@@ -1,25 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
-string solve()
-{
-    long long n;
-    cin >> n;
-    while (n % 2 == 0)
-    {
-        n /= 2;
-    }
-    if (n == 1)
-        return "NO";
-    else
-        return "YES";
-}
-
 int main()
 {
     int t;
     cin >> t;
     while (t--)
     {
-        cout << solve() << endl;
+        long long a, b;
+        cin >> a >> b;
+        long long minm = min(a, b);
+        long long maxgcd = abs(b - a);
+        long long gcd = 0;
+        long long ans = 0;
+        if (maxgcd == 0)
+            cout << "0 0" << endl;
+        else
+        {
+            if (minm % maxgcd != 0)
+                ans = min(minm % maxgcd, maxgcd - (minm % maxgcd));
+            else
+                ans = 0;
+            cout << maxgcd << " " << ans << endl;
+        }
     }
+    return 0;
 }
